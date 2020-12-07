@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*Mobile Phones Portrait*/
+@media screen and (max-device-width: 360px) and (orientation: portrait) {
+    /*footer*/
+    div.links {display: none}
+}
+/*Mobile Phones Landscape*/
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    /*footer*/
+    div.links {display: none}
+}
+
+/*iPhone 4+ Portrait or Landscape 基本上不用太理這支*/
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    /*footer*/
+    div.links {display: none}
+}
+
+/*iPhone 5 Portrait or Landscape*/
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    /*footer*/
+    div.links {display: none}
+}
+@media (device-height: 320px) and (device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    /*footer*/
+    div.links {display: none}
+}
+
+/*iPhone 6 Portrait or Landscape*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    /*footer*/
+    div.links {display: none}
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) (orientation: landscape) {
+    /*footer*/
+    div.links {display: none}
+}
+
+/*iPhone 6 plus Portrait or Landscape*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+    /*footer*/
+    div.links {display: none}
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) (orientation: landscape) {
+    /*footer*/
+    div.links {display: none}
+}
+
+/*Android Tablets*/
+/*800px / 1280px samsung galaxy Tab 2 10.1*/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) {}
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: landscape) {}
+
+/*ipad*/
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {}

@@ -1,0 +1,197 @@
+/*google web fonts*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);/*繁中*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+html {min-height: 100%; font-size: 93.75%} /*16px x 93.75% = 15px 網站字型大小預設值*/
+body {
+	height: 100%;
+	background: #f5f5f5;
+	font-family: 'Raleway', 'Noto Sans TC', MS UI Gothic, MS Gothic, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: hsl(0, 0%, 0%)
+}
+img {width: 100%; border: none}
+a:link, a:visited {color: #000; text-decoration: none}
+a:hover {color: #f60}; text-decoration: none}
+button {border: none; border-radius: .25rem; padding: .25rem 1rem}
+
+* { /*使用邊框不影響 div or table 本身寬度設定*/
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+
+/*font setting*/
+h1, h2, h3, h4, p, ul, li, dl, dt, dd, button {font-family: 'Raleway', 'Noto Sans TC', MS UI Gothic, MS Gothic, sans-serif}
+h1 {font-size: 1.73rem}
+h2 {font-size: 1.5rem}
+p, li {font-size: 1rem}
+li {list-style: none}
+div.clearfix {clear: both}
+
+/*goTOP*/
+.cd-top {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	/* image replacement properties */
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background: hsla(0, 0%, 0%, 0.9) url(../images/layout/cd-top-arrow.svg) no-repeat center 50%; /*改變按鈕顏色*/
+	border-radius: .5rem;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	-moz-transition: opacity .3s 0s, visibility 0s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s
+}
+.cd-top.cd-is-visible {visibility: visible; opacity: .75}
+
+/* the button becomes visible */
+.cd-top.cd-fade-out {opacity: .25}
+
+/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+.no-touch .cd-top:hover {background-color: hsla(56, 100%, 50%, .75); opacity: 1}
+
+/*改變按鈕顏色*/
+@media only screen and (min-width: 1024px) {
+	.cd-top {
+		height: 60px;
+		width: 60px;
+		right: 30px;
+		bottom: 30px
+	}
+}
+@media only screen and (min-width: 768px) {
+	.cd-top {right: 20px; bottom: 20px}
+}
+
+/*header*/
+header {}
+/*nav*/
+nav.navbar {
+    height: 70px;
+    background: rgba(255, 239, 1, .9);
+    padding: 1rem 1.5rem
+}
+.navbar ul.left {padding-left: 3rem}
+.navbar ul.navbar-nav>li>a {color: #282828}
+ul.navbar-nav>li {
+	font-size: 1.2rem;
+	padding:  1.434rem 0
+}
+.navbar ul.navbar-nav>li>span {padding: 0 1rem}
+.navbar .mr-auto>li:focus, .navbar .mr-auto>li:hover {background: url(../images/layout/bg-nav-hover.gif) 1.8rem 3.3rem no-repeat}
+
+ul.navbar-right {border-left: #333 1px solid; padding-left: 1rem}
+ul.navbar-right>li {font-size: 1rem}
+ul.navbar-right>li:first-child {padding-right: 1rem}
+ul.navbar-right>li:nth-child(2) {
+    background: #000;
+    color: #fff;
+    padding: 1rem 2rem
+}
+.navbar ul.navbar-right>li:nth-child(2)>a {color: #fff}
+.navbar ul.navbar-right>li:nth-child(2)>a>span {color: #f00}
+a.navbar-brand>img {width: auto}
+
+/*slidebars*/
+div.slidebars {background: rgba(0,0,0,.95); padding: 1.5rem}
+div.slidebars a {color: #fff}
+div.slidebars>dl {
+    margin-bottom: 1.5rem
+}
+div.slidebars>dl>dd {
+    border-bottom: #fff 1px dashed;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem
+}
+div.slidebars>dl>dd>a>i {margin-right: 1rem}
+
+/*footer*/
+footer {background: #111;color: #fff;padding: 45px 0 30px}
+div.footer {max-width: 1170px; width: 1170px}
+div.ft_contact>img {width: auto; margin-bottom: 2rem}
+div.ft_contact>dl>dt {
+	width: 2rem;
+	float: left;
+	text-align: center;
+	margin: 0 1.5rem 2rem 0
+}
+div.ft_contact>dl>dt>img {width: auto}
+div.ft_contact>dl>dd {margin-bottom: 2rem}
+
+div.links {text-align: center; padding-top: 3.5rem}
+div.links>dl>dd {text-align: center; margin-bottom: 1.5rem}
+div.links>dl>dd>a:link,
+div.links>dl>dd>a:visited {color: #fff}
+div.links>dl>dd>a:hover {color: #ffef01}
+
+/*copyright*/
+div.copyright {
+	max-width: 1280px;
+	border-top: #3e3e3e 1px solid;
+	text-align: right;
+	margin: 0 auto;
+	padding: 2rem 2.5rem 0
+}
+
+/*button setting*/
+button {border: none; border-radius: 0; cursor: pointer}
+button.btn_183 {
+	width: 12.2rem;
+	background: #fff;
+	font-size: 1.2rem;
+	color: #000;
+	padding: 1rem 0
+}
+button.btn_183:hover {background: #000;color: #fff}
+button.btn_137 {
+	width: 9.133333333333333rem;
+	background: #fff;
+	border-radius: 1.666666666666667rem;
+	font-size: 1.2rem;
+	color: #000;
+	padding: 1rem 0
+}
+button.btn_137:hover {background: #000;color: #fff}
+button.btn_133 {
+	width: 8.866666666666667rem;
+	background: #000;
+	border-radius: 0;
+	font-size: 1.2rem;
+	color: #fff;
+	padding: .6rem 0
+}
+button.btn_133:hover {background: #fff;color: #000}
+
+/*form setting*/
+input,select {
+	background: none;
+	border: #999 1px solid;
+	padding: .5rem .75rem
+}
+input[type="checkbox"] {width: auto}
+select {padding: .384rem .75rem}
+select, option {text-align: center}
+
+/*page no*/
+.pagination>li>a, .pagination>li>span {background: #000;color: #fff}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {background: rgb(255, 239, 1);color: #000}
+
+.container {max-width: 1170px; width: inherit}

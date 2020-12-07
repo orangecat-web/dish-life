@@ -1,0 +1,131 @@
+@charset "utf-8";
+/*編輯器框架*/
+div.editor {
+    width: 95%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/*pages content*/
+div.pages {max-width: 1170px;margin: 5rem auto 3rem}
+
+section.container>h1 {
+    max-width: 1170px;
+    margin: 7rem auto 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 300
+}
+
+/*news*/
+div.wf-box>div.content>h3 {font-size: 1.05rem;font-weight: 500}
+
+div.news_title {}
+div.news_title>p {font-weight: 300}
+div.news_title>h1 {font-size: 1.6rem;font-weight: 300}
+
+/*product nav*/
+header.products {}
+/*nav products*/
+header.products>nav {}
+header.products>nav>h1 {font-size: 2.133333333333333rem;font-weight: 500;margin-bottom: 1.75rem}
+header.products>nav>dl {}
+header.products>nav>dl>dd {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem
+}
+header.products>nav>dl>dd.active {font-size: 1.25rem;font-weight: 500}
+/*slider*/
+header.products>div.prod_ad {}
+/*product list*/
+nav.cookie {font-size: 0.8666666666666667rem}
+nav.cookie>span {font-weight: 700}
+
+button.btn_add_cart {
+    width: 3.866666666666667rem;
+    height: 3.866666666666667rem;
+    background: url(../images/btn-add-cart.png) 50% 50% no-repeat #000;
+    border-radius: 0;
+    float: right
+}
+button.btn_add_cart:hover {background: url(../images/btn-add-cart-ove.png) 50% 50% no-repeat #fe0}
+
+div.p_list {}
+div.p_list>div.title {border-bottom: #000 1px solid}
+div.p_list>div.title>h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    float: left
+}
+div.p_list>div.title>nav.cookie {margin-top: 2.7rem;float: right}
+div.p_list>dl {}
+div.p_list>dl>dd {
+    border-bottom: #eee 1px solid;
+    border-right: #eee 1px solid;
+    padding: 1.15rem
+}
+div.p_list>dl>dd:nth-child(4n-3) {border-left: #eee 1px solid}
+div.p_list>dl>dd>img {margin: 0 auto}
+/*list content*/
+div.p_list>dl>dd>dl {text-align: left;float: left}
+div.p_list>dl>dd>dl>dt {font-size: 1.2rem}
+div.p_list>dl>dd>dl>dd {font-size: 1.2rem;color: #666}
+div.p_list>dl>dd>dl>dd {font-size: 1.2rem;color: #666}
+div.p_list>dl>dd>dl>dd>span {}
+
+/*product detail*/
+div.p_detail {}
+div.p_detail>dl {}
+div.p_detail>dl>dd>p_img {}
+div.p_detail>dl>dd.p_info {}
+div.p_detail>dl>dd.p_info>h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem
+}
+div.p_detail>dl>dd.p_info>p {margin-bottom: 1rem}
+div.p_detail>dl>dd.p_info>p.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+dl.quantity {}
+dl.quantity>dt {float: left;margin: .5rem 1rem 0 0}
+dl.quantity>dd {}
+dl.quantity>dd>button.quantity,
+dl.quantity>dd>input {
+    max-width: 43px;
+    max-height: 43px;
+    background: none;
+    border: #999 1px solid;
+    color: #999;
+    text-align: center;
+    margin: 0 1.125rem 1.5rem 0;
+    padding: .6rem .75rem .5rem
+}
+dl.quantity>dd>button.quantity:hover {background: #000;color: #fff}
+button.add_cart {
+    width: 100%;
+    background: #000;
+    border: 0;
+    color: #fff
+}
+
+/*prdouct detail more product*/
+div.p_more {}
+div.p_more>h2 {
+    border-bottom: #000 1px solid;
+    font-size:1.8rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem
+}
+div.p_more>dl {}
+div.p_more>dl>dd {
+    border-bottom: #eee 1px solid;
+    border-right: #eee 1px solid;
+    padding: 1.15rem
+}
+div.p_more>dl>dd:nth-child(3n-2) {border-left: #eee 1px solid}
+div.p_more>dl>dd>img {margin: 0 auto}
+div.p_more>dl>dd>dl {text-align: left;float: left}
+div.p_more>dl>dd>dl>dt {font-size: 1.2rem}
+div.p_more>dl>dd>dl>dd {font-size: 1.2rem;color: #666}

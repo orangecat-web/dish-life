@@ -1,0 +1,97 @@
+@charset "utf-8";
+/*mamber*/
+div.member {max-width: 1170px;margin: 0 auto}
+/*signin forget password*/
+div.signin,div.signup,div.forget_pw {max-width: 50%;margin: 8rem auto}
+div.signin>dl,
+div.signup>dl,
+div.forget_pw>dl {}
+div.signin>dl>dt,
+div.signup>dl>dt,
+div.forget_pw>dl>dt {float: left;margin: .58rem .75rem}
+div.signin>dl>dd,
+div.signup>dl>dd,
+div.forget_pw>dl>dd {margin-bottom: 1.5rem}
+div.signin>dl>dd:last-child,
+div.signup>dl>dd:last-child,
+div.forget_pw>dl>dd:last-child {text-align: center}
+div.signin>dl>dd>input {width: 80%}
+div.forget_pw>dl>dd>input {width: 77%}
+div.signin>dl>dd>a {color: #f00;margin-left: 1rem}
+
+/*signup*/
+div.signup>h2 {text-align: center;margin-bottom: 2rem}
+div.signup>dl>dt {width: 128px;text-align: right;margin: .58rem .75rem}
+div.signup>dl>dd>input {width: 74%}
+div.signup>dl>dd>input.add {width: 41%}
+div.rule {margin-bottom: 1rem}
+
+/*member centre*/
+div.member>div.left {}
+div.member>div.left>dl {/*desktop or laptop mode*/display: block}
+div.member>div.left>dl>a>dd {
+	background: #000;
+	font-size: 1.25rem;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 1px;
+	padding: 1.2rem 1.5rem
+}
+div.member>div.left>dl>a>dd:hover {background: #fff; color: #000}
+div.member>div.left>select {display: none}
+div.member>div.right {
+	border: #000 1px solid;
+    margin-bottom: 6rem;
+	padding: 2rem
+}
+div.history {margin-top: 1.5rem}
+div.history>h2 {font-weight: 300;margin-top: 1.5rem}
+div.history>table {}
+div.history>table tr:nth-child(odd) {background: #ddd}
+div.history>table tr:hover {background: #ffffd8}
+div.history>table tr>th,div.history>table tr>td {
+	border: #ddd 1px solid;
+	padding: 1rem 1.5rem
+}
+div.history>table tr>th {
+	background: #000;
+	font-size: 1.05rem;
+	color: #fff;
+	text-align: center
+}
+div.history>table tr>th:nth-child(1) {width: 12%}
+div.history>table tr>th:nth-child(2) {width: 68%}
+div.history>table tr>th:nth-child(3) {width: 20%}
+div.history>table tr>td {}
+
+/*history detail*/
+/*shop list*/
+div.history>table.shop-list {width: 100%}
+div.history>table.shop-list tr>th {}
+div.history>table.shop-list tr>th:nth-child(1) {width: 60%}
+div.history>table.shop-list tr>th:nth-child(2) {width: 10%}
+div.history>table.shop-list tr>th:nth-child(3) {width: 15%}
+div.history>table.shop-list tr>th:nth-child(4) {width: 15%}
+div.history>table.shop-list tr>td {}
+div.history>table.shop-list tr>td:nth-child(1) {}
+div.history>table.shop-list tr>td:nth-child(2) {text-align: center}
+div.history>table.shop-list tr>td:nth-child(3),
+div.history>table.shop-list tr>td:nth-child(4) {text-align: right}
+/*payment info*/
+div.payment_info {margin-top: 3rem}
+div.payment_info>h3 {text-align: center;clear: both}
+div.payment_info>dl>dt.left,
+div.payment_info>dl>dd.right {margin-bottom: 1.25rem}
+div.payment_info>dl>dt.left {}
+div.payment_info>dl>dd.right {}
+
+/*edit member*/
+div.edit_member>h2 {text-align: center;margin-bottom: 2rem}
+div.edit_member>dl>dt {width: 96px;text-align: right;margin: .58rem .75rem}
+div.edit_member {max-width: 100%;margin: 0 auto}
+div.edit_member>dl>dt {float: left;margin: .58rem .75rem}
+div.edit_member>dl>dd {margin-bottom: 1.5rem}
+div.edit_member>dl>dd:last-child {text-align: center}
+div.edit_member>dl>dd>input {width: 72%}
+div.edit_member>dl>dd>select {margin-bottom: 1rem;padding: .384rem .4rem}
+div.signin>dl>dd>a {color: #f00;margin-left: 1rem}

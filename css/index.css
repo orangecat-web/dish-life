@@ -1,0 +1,181 @@
+div.content {max-width: 1170px}
+/*slider*/
+/*slider*/
+div.slider {max-width: 1170px;margin: 0 auto}
+/* jssor slider bullet navigator skin 05 css */
+/*
+.jssorb05 div           (normal)
+.jssorb05 div:hover     (normal mouseover)
+.jssorb05 .av           (active)
+.jssorb05 .av:hover     (active mouseover)
+.jssorb05 .dn           (mousedown)
+*/
+.jssorb05 {
+	position: absolute;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+	position: absolute;
+	/* size of bullet elment */
+	width: 16px;
+	height: 16px;
+	background: url(../js/slider/images/b05.png) no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+}
+.jssorb05 div {background-position: -7px -7px}
+.jssorb05 div:hover, .jssorb05 .av:hover {background-position: -37px -7px}
+.jssorb05 .av {background-position: -67px -7px}
+.jssorb05 .dn, .jssorb05 .dn:hover {background-position: -97px -7px}
+
+/* jssor slider arrow navigator skin 11 css */
+/*
+.jssora11l                  (normal)
+.jssora11r                  (normal)
+.jssora11l:hover            (normal mouseover)
+.jssora11r:hover            (normal mouseover)
+.jssora11l.jssora11ldn      (mousedown)
+.jssora11r.jssora11rdn      (mousedown)
+*/
+.jssora11l, .jssora11r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 37px;
+	height: 37px;
+	cursor: pointer;
+	background: url(../js/slider/images/a11.png) no-repeat;
+	overflow: hidden;
+}
+.jssora11l {background-position: -11px -41px}
+.jssora11r {background-position: -71px -41px}
+.jssora11l:hover {background-position: -131px -41px}
+.jssora11r:hover {background-position: -191px -41px}
+.jssora11l.jssora11ldn {background-position: -251px -41px}
+.jssora11r.jssora11rdn {background-position: -311px -41px}
+
+div.img-slider {
+	background-size: cover;
+}
+
+/*ad one*/
+div.ad_one {margin-bottom: 5rem}
+div.ad_one>dl>dd>dl>dd.ad01-1-1 {background: rgb(221, 78, 78)}
+div.ad_one>dl>dd>dl>dd.ad01-2-2 {background: #222}
+div.ad_one>dl>dd>dl>dd.ad01-1-1,
+div.ad_one>dl>dd>dl>dd.ad01-2-2 {
+	max-width: 19.5rem;
+	color: #fff;
+	padding: 23px
+}
+div.ad_one>dl>dd>dl>dd.ad01-1-1>h1,
+div.ad_one>dl>dd>dl>dd.ad01-2-2>h1 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 1.5rem
+}
+div.ad_one>dl>dd>dl>dd.ad01-1-1>p,
+div.ad_one>dl>dd>dl>dd.ad01-2-2>p {
+	font-weight: 300;
+	text-align: left;
+	margin-bottom: 1.5rem
+}
+/*ad*/
+dl>dd.left, dl>dd.right {padding: 0}
+/*ad 1*/
+div.AD_1 {}
+div.AD_1>dl {max-width: 585px; margin: 0; padding: 0}
+div.AD_1>dl>dd {max-height: 293px; color: #fff; margin: 0; padding: 0}
+div.AD_1>dl>dd>h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem
+}
+div.AD_1>dl>dd>p {
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 1.5rem
+}
+div.AD_1>dl>dd.ad01-1-1 {background: rgb(221, 78, 78); padding: 1.5rem}
+div.AD_1>dl>dd.ad01-1-2 {background: #222; padding: 1.5rem}
+
+/*ad 2*/
+div.ad_2_title {
+    background: url(../images/line-ind.png) 50% bottom no-repeat;
+    text-align: center;
+    margin: 2rem auto;
+    padding-bottom: 1rem
+}
+div.ad_2_title>h1 {
+    font-size: 2.133333333333333rem;
+    font-weight: 800;
+    margin-top: 0
+}
+div.AD_2 {}
+div.AD_2>dl {margin: 0}
+div.AD_2>dl>dd {}
+div.AD_2>dl>dd>h1 {
+    font-size: 1.066666666666667rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+div.AD_2>dl>dd>p.price {font-size: 1.066666666666667rem}
+
+/*event*/
+dl.event {margin: 2rem auto 0}
+dl.event>dd {padding: 0}
+
+/*ad two*/
+div.ad_two {margin-bottom: 5rem}
+div.ad_two>div.title {
+    background: url(../images/line-ind.png) 50% bottom no-repeat;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem
+}
+div.ad_two>div.ad_2_title>h1 {
+    font-size: 2.133333333333333rem;
+    font-weight: 800;
+    margin-top: 0
+}
+div.ad_two>div.title>p {margin-bottom: 0}
+
+div.ad_two>dl>dd {}
+div.ad_two>dl>dd.ad02-1>div {max-width: 562px;max-height: 480px;border-radius: 1rem}
+div.ad02-1-c {
+    max-height: 32rem;
+    border-radius: 1rem;
+    background: url(../images/icon-ind-arrow-left.png) right 50% no-repeat rgba(0, 0, 0, .25);
+    padding: 9rem 5rem;
+    color: #fff
+}
+div.ad02-1-c>h1 {font-size: 2.133333333333333rem;font-weight: 800;margin-bottom: 1.5rem}
+div.ad02-1-c>p {margin-bottom: 3rem}
+
+dd.ad02-2 {max-width: 19rem;margin: 0 .25rem}
+dd.ad02-2>h1 {
+    font-size: 1.066666666666667rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+dd.ad02-2>p.price {font-size: 1.066666666666667rem}
+
+/*event*/
+div.event {max-height: 19.33333333333333rem;color: #fff}
+div.event>dl {margin-bottom: 0}
+div.event-left {background: rgba(221, 78, 78, .75)}
+div.event-right {background: rgba(26, 188, 156, .75)}
+div.event-left,div.event-right {padding: 3rem}
+div.event-left>h1,
+div.event-right>h1 {
+    font-size: 1.733333333333333rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+div.event-left>h4,
+div.event-right>h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+}
